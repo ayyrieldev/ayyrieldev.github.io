@@ -1,0 +1,125 @@
+# Personal Portfolio Management System
+
+Website portofolio pribadi dinamis menggunakan PHP Native, MySQL, HTML, CSS, dan JavaScript. Project ini memiliki halaman pengunjung dan admin dashboard untuk mengelola biodata, skill, project, pengalaman, pendidikan, sertifikat, dan pesan kontak.
+
+## Teknologi
+
+- PHP Native
+- MySQL
+- HTML, CSS, JavaScript
+- XAMPP atau Laragon
+- mysqli prepared statement
+
+## Cara Menjalankan di XAMPP
+
+1. Pindahkan folder `portfolio` ke `htdocs`.
+2. Jalankan Apache dan MySQL dari XAMPP Control Panel.
+3. Buka `http://localhost/phpmyadmin`.
+4. Import file `database.sql`.
+5. Pastikan konfigurasi database di `config/database.php` sesuai:
+
+```php
+$host = 'localhost';
+$user = 'root';
+$password = '';
+$database = 'db_portfolio';
+```
+
+6. Buka website:
+
+```text
+http://localhost/portfolio/
+```
+
+Jika folder tetap berada di `C:\xampp\htdocs\Portofolio Ayyriel\portfolio`, buka:
+
+```text
+http://localhost/Portofolio%20Ayyriel/portfolio/
+```
+
+7. Buka admin dashboard:
+
+```text
+http://localhost/portfolio/admin/
+```
+
+## Login Admin Awal
+
+```text
+Username: admin
+Password: admin123
+```
+
+Password admin di database sudah menggunakan `password_hash`, bukan teks biasa.
+
+## Cara Menjalankan di Laragon
+
+1. Pindahkan folder `portfolio` ke folder `www`.
+2. Jalankan Apache/Nginx dan MySQL dari Laragon.
+3. Import `database.sql` melalui phpMyAdmin, HeidiSQL, atau Adminer.
+4. Akses `http://localhost/portfolio/` atau virtual host Laragon jika aktif.
+
+## Fitur Pengunjung
+
+- Home dengan nama, foto profil, deskripsi, tombol project, tombol kontak, dan download CV.
+- About berisi biodata dan deskripsi diri.
+- Skills dinamis dari database.
+- Projects dinamis dari database.
+- Experience dan Education menggunakan timeline sederhana.
+- Certificates dengan gambar atau link sertifikat.
+- Contact form yang menyimpan pesan ke database.
+- Dark mode menggunakan JavaScript dan `localStorage`.
+
+## Fitur Admin
+
+- Login dan logout menggunakan session PHP.
+- Password diverifikasi menggunakan `password_verify`.
+- Dashboard statistik jumlah data.
+- CRUD biodata.
+- CRUD skills.
+- CRUD projects dengan upload gambar.
+- CRUD experience.
+- CRUD education.
+- CRUD certificates dengan upload gambar.
+- Melihat dan menghapus pesan kontak.
+
+## Catatan Upload
+
+Folder upload berada di:
+
+```text
+assets/uploads/
+```
+
+Format gambar yang diterima:
+
+- jpg
+- jpeg
+- png
+- webp
+
+Ukuran maksimal upload gambar adalah 2 MB.
+
+## Struktur Folder
+
+```text
+portfolio/
+├── assets/
+│   ├── css/style.css
+│   ├── js/script.js
+│   ├── img/
+│   └── uploads/
+├── admin/
+├── config/database.php
+├── includes/
+├── index.php
+├── about.php
+├── skills.php
+├── projects.php
+├── experience.php
+├── education.php
+├── certificates.php
+├── contact.php
+├── database.sql
+└── README.md
+```
