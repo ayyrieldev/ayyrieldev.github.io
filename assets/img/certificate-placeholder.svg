@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Certificate placeholder">
+  <rect width="1200" height="720" fill="#eef3f8"/>
+  <rect x="120" y="90" width="960" height="540" rx="12" fill="#ffffff" stroke="#0f2f5f" stroke-width="8"/>
+  <rect x="190" y="160" width="820" height="70" rx="8" fill="#0f2f5f"/>
+  <rect x="280" y="300" width="640" height="36" rx="8" fill="#194b8f"/>
+  <rect x="350" y="378" width="500" height="24" rx="8" fill="#dbe3ee"/>
+  <circle cx="600" cy="500" r="56" fill="#194b8f"/>
+  <path d="M575 500l17 18 39-44" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
