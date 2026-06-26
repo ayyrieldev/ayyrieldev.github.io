@@ -2,6 +2,10 @@
 
 Website portofolio pribadi dinamis menggunakan PHP Native, MySQL, HTML, CSS, dan JavaScript. Project ini memiliki halaman pengunjung dan admin dashboard untuk mengelola biodata, skill, project, pengalaman, pendidikan, sertifikat, dan pesan kontak.
 
+**Catatan Khusus untuk GitHub Pages:**
+Repository ini telah dilengkapi dengan versi **HTML statis** (`index.html`, `about.html`, `skills.html`, `projects.html`, `experience.html`, `education.html`, `certificates.html`, `contact.html`) agar dapat langsung di-host di **GitHub Pages** (misalnya `https://ayyrieldev.github.io/`). File PHP asli tetap dipertahankan untuk referensi atau pengembangan berbasis database lokal.
+
+
 ## Teknologi
 
 - PHP Native
